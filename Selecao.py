@@ -1,5 +1,16 @@
 class Selecao():
-  def __init__(self, nome, forcaAtaque, forcaDefesa, saldoDeGols, vitorias, derrotas, golsMarcados, golsSofridos, pontuacao):
+  def __init__(
+    self,
+    nome,
+    forcaAtaque,
+    forcaDefesa,
+    saldoDeGols,
+    vitorias,
+    derrotas,
+    golsMarcados,
+    golsSofridos,
+    pontuacao
+  ):
     self.__nome = nome
     self.__forcaAtaque = forcaAtaque
     self.__forcaDefesa = forcaDefesa
