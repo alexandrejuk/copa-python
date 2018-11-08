@@ -1,44 +1,25 @@
-class Selecao():
-  def __init__(
-    self,
-    nome,
-    forcaAtaque,
-    forcaDefesa,
-    saldoDeGols,
-    vitorias,
-    derrotas,
-    golsMarcados,
-    golsSofridos,
-    pontuacao
-  ):
+class Selecao:
+  def __init__(self, nome, gols, vitoria, fase, atk):
     self.__nome = nome
-    self.__forcaAtaque = forcaAtaque
-    self.__forcaDefesa = forcaDefesa
-    self.__saldoDeGols = saldoDeGols
-    self.__vitorias = vitorias
-    self.__derrotas = derrotas
-    self.__golsMarcados = golsMarcados
-    self.__golsSofridos = golsSofridos
-    self.__pontuacao = pontuacao
+    self.__gols = gols
+    self.__vitoria = vitoria
+    self.__fase = fase
+    self.__atk = atk
 
-  def atualizarSelecao(self, Ataque, Defesa):
-    self.__forcaAtaque = Ataque
-    self.__forcaDefesa = Defesa
-
-  def atualizarGolsMarcados(self, value):
-    self.__golsMarcados += value
+  def getNome(self):
+    return self.__nome
   
-  def atualizarGolsSofridos(self, value):
-    self.__golsSofridos += value
+  def getFase(self):
+    return self.__fase
 
-  def atualizarSaldoDeGols(self, value):
-    self.__golsMarcados += value
+  def putVitoria(self, value):
+    self.__vitoria += value
 
-  def atualizarVitorias(self, value):
-    self.__vitorias += value
+  def putGols(self, value):
+    self.__gols += value
 
-  def atualizarDerrotas(self, value):
-    self.__derrotas += value
+  def getGols(self):
+    return self.__gols
 
-  def atualizarPontuacao(self, value):
-    self.__pontuacao += value
+  def getAtk(self):
+    return self.__atk
