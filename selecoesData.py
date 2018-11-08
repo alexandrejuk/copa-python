@@ -37,7 +37,7 @@ def selecoes():
     "Chade",
     "Chile",
     "Chipre",
-    "Cidadedo Vaticano",
+    "Cidade do Vaticano",
     "Cingapura",
     "Colômbia",
     "Comores",
