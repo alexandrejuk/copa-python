@@ -4,16 +4,16 @@ import algoritmoWin
 class Partida:
   def __init__(self, selecaoA, selecaoB):
     self.__selecaoA = selecaoA
+    self.__golsSelecaoA = 0
     self.__statusSelecaoA = []
 
     self.__selecaoB = selecaoB
+    self.__golsSelecaoB = 0
     self.__statusSelecaoB = []
 
     self.__vencedor = None
     self.__perdedor = None
 
-    self.__golsSelecaoA = 0
-    self.__golsSelecaoB = 0
 
 
   def iniciarPartida(self):
