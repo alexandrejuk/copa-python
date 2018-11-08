@@ -1,2 +1,2 @@
 def calcWin(random, atk):
-  return round((round(random(), 2) * atk ), 2)
+  return round(random() * atk, 2)
