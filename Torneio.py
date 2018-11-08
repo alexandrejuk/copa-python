@@ -2,8 +2,8 @@ class Torneio:
   def __init__(self):
     self.__faseGrupos = []
 
-  def registrarGroupo(self, grupo):
+  def registrarGrupo(self, grupo):
     self.__faseGrupos.append(grupo)
     
-  def informarGroupos(self):
+  def informarGrupos(self):
     return self.__faseGrupos

@@ -23,12 +23,12 @@ for i in range(40):
     grupo.append(selecao)
 
   elif len(grupo) == 4:
-    torneio.registrarGroupo(grupo)
+    torneio.registrarGrupo(grupo)
 
     grupo = []
     count += 1
 
-iSel = torneio.informarGroupos()
+iSel = torneio.informarGrupos()
 for i in range(len(iSel)):
  for j in range(4):
    print(iSel[i][j].getFase() +': '+iSel[i][j].getNome())
