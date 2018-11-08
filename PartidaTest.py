@@ -10,3 +10,7 @@ class TestPartida(unittest.TestCase):
     definirGols = instanciaPartida.definirGols()
     golsSelecaoA = instanciaPartida.informarGolsSelecaoA()
     golsSelecaoB = instanciaPartida.informarGolsSelecaoB()
+
+  def testInstancePartida(self):
+    self.assertIsInstance(instanciaPartida, Partida)
+    
