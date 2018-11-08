@@ -15,7 +15,6 @@ class Partida:
     self.__perdedor = None
 
 
-
   def iniciarPartida(self):
 
     for i in range(1,91):
@@ -50,6 +49,16 @@ class Partida:
       self.__selecaoB.putVitoria(1)
   
 
+  def vencedor(self):
+    return self.__vencedor 
+
+
+
+  def perdedor(self):
+    return self.__perdedor
+
+
+
   def __calcularGols(self):
 
     for i in range(len(self.__statusSelecaoA)):
@@ -60,13 +69,9 @@ class Partida:
       elif self.__statusSelecaoA[i] < self.__statusSelecaoB[i]:
         self.__golsSelecaoB += self.__checarGol(self.__statusSelecaoB[i])
     
+
+    
   def __checarGol(self, a):
     if a > 0.84 and a <= 1:
       return 1
     return 0
-
-  def vencedor(self):
-    return self.__vencedor 
-
-  def perdedor(self):
-    return self.__perdedor
