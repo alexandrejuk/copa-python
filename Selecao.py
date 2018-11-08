@@ -12,10 +12,10 @@ class Selecao:
   def getFase(self):
     return self.__fase
 
-  def putVitoria(self, value):
+  def addVitoria(self, value):
     self.__vitoria += value
 
-  def putGols(self, value):
+  def addGols(self, value):
     self.__gols += value
 
   def getGols(self):
