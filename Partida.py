@@ -1,7 +1,7 @@
 import random
 
 class Partida:
-  def __init__(self, selecaoA, selecaoB):
+  def __init__(self, selecaoA, selecaoB, tipoPartida):
     self.__selecaoA = selecaoA
     self.__statusSelecaoA = []
     self.__selecaoB = selecaoB
@@ -10,6 +10,7 @@ class Partida:
     self.__perdedor = None
     self.__golsSelecaoA = 0
     self.__golsSelecaoB = 0
+    self.__tipoPartida = tipoPartida
 
   def __calcularPartida(self):
     return round((round(random.random(),2) * 0.87 ), 2)

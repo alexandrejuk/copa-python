@@ -1,7 +1,7 @@
 import unittest
 from Partida import Partida
 
-instanciaPartida = Partida("Brazil", "Argentina")
+instanciaPartida = Partida("Brazil", "Argentina", "faseGrupo")
 
 class TestPartida(unittest.TestCase):
 
