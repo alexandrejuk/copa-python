@@ -1,25 +1,27 @@
 class Selecao:
-  def __init__(self, nome, gols, vitoria, fase, atk):
+  def __init__(self, nome, fase):
     self.__nome = nome
-    self.__gols = gols
-    self.__vitoria = vitoria
+    self.__gols = 0
+    self.__vitorias = 0
     self.__fase = fase
-    self.__atk = atk
-
+    
   def getNome(self):
     return self.__nome
-  
-  def getFase(self):
-    return self.__fase
-
-  def addVitoria(self, value):
-    self.__vitoria += value
-
-  def addGols(self, value):
-    self.__gols += value
 
   def getGols(self):
     return self.__gols
 
-  def getAtk(self):
-    return self.__atk
+  def getVitorias(self):
+    return self.__vitorias
+
+  def getFase(self):
+    return self.__fase
+
+  def updateFase(self, fase):
+    self.__fase = fase
+  
+  def addGols(self, value):
+    self.__gols += value
+  
+  def addVitoria(self, value):
+    self.__vitorias += value

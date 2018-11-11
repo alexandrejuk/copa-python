@@ -1,2 +1,2 @@
-def calcWin(random, atk):
-  return round(random() * atk, 2)
+def calcWin(random):
+  return round(random(0.83, 0.9), 2)
